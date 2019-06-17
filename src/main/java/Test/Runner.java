@@ -6,8 +6,11 @@ import org.junit.runner.RunWith;
 
 @RunWith(Cucumber.class)
 @CucumberOptions(
-        features = "src/main/resources/TestFeatures/EtsyTest.feature",
+        plugin = {"pretty","html:target/cucumberHTML-report",
+        "json:target/cucumber.json"},
+        features = "src/main/resources/TestFeatures",
         glue = "StepDefinitions",
+        tags = "@WebOrdersTest",
         dryRun = false
 )
 public class Runner {

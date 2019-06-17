@@ -8,7 +8,7 @@ import org.junit.runner.RunWith;
 @CucumberOptions(
         features = "src/main/resources/TestFeatures",
         glue = "StepDefinitions",
-        tags = "@gitstable",
+        tags = {"@smokeTest", "@ui"},
         dryRun = false
 )
 public class gitStableRunner {

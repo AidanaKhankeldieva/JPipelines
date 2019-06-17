@@ -25,4 +25,19 @@ public class EtsyHomePage {
         searchButton.click();
     }
 
+    @FindBy(id="catnav-primary-link-10855")
+    public WebElement Jewelry;
+
+    @FindBy(id="catnav-primary-link-10923")
+    public WebElement Clothing;
+
+    @FindBy(id = "catnav-primary-link-891")
+    public WebElement Home;
+
+    @FindBy(id="catnav-primary-link-10983")
+    public WebElement Wedding;
+
+    @FindBy(id="catnav-primary-link-11049")
+    public WebElement Toys;
+
 }
