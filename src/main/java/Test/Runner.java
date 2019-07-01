@@ -8,9 +8,9 @@ import org.junit.runner.RunWith;
 @CucumberOptions(
         plugin = {"pretty","html:target/cucumberHTML-report",
         "json:target/cucumber.json"},
-        features = "src/main/resources/TestFeatures",
+        features = "src/main/resources/TestFeatures/TestMyApplication",
         glue = "StepDefinitions",
-        tags = "@WebOrdersTest",
+        tags = "@Database",
         dryRun = false
 )
 public class Runner {
